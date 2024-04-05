@@ -29,7 +29,9 @@ namespace Project
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form2 F2 = new Form2();
+            F2.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
