@@ -1,7 +1,7 @@
 ﻿
 namespace Project
 {
-    partial class Form2
+    partial class F
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Project
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -78,7 +78,7 @@ namespace Project
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(160, 54);
+            this.button2.Location = new System.Drawing.Point(163, 54);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(101, 117);
             this.button2.TabIndex = 1;
@@ -95,7 +95,7 @@ namespace Project
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(308, 54);
+            this.button3.Location = new System.Drawing.Point(317, 54);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(101, 117);
             this.button3.TabIndex = 2;
@@ -110,13 +110,14 @@ namespace Project
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(447, 54);
+            this.button4.Location = new System.Drawing.Point(472, 54);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(101, 117);
             this.button4.TabIndex = 3;
             this.button4.Text = "Modern Warfare 2";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -125,7 +126,7 @@ namespace Project
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(583, 54);
+            this.button5.Location = new System.Drawing.Point(629, 54);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(101, 117);
             this.button5.TabIndex = 4;
@@ -140,7 +141,7 @@ namespace Project
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(724, 54);
+            this.button6.Location = new System.Drawing.Point(780, 54);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(101, 117);
             this.button6.TabIndex = 5;
@@ -155,7 +156,7 @@ namespace Project
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(860, 54);
+            this.button7.Location = new System.Drawing.Point(927, 54);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(101, 117);
             this.button7.TabIndex = 6;
@@ -203,7 +204,7 @@ namespace Project
             this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button10.Location = new System.Drawing.Point(308, 237);
+            this.button10.Location = new System.Drawing.Point(317, 237);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(101, 117);
             this.button10.TabIndex = 9;
@@ -219,7 +220,7 @@ namespace Project
             this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
             this.button11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button11.Location = new System.Drawing.Point(308, 421);
+            this.button11.Location = new System.Drawing.Point(317, 421);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(101, 117);
             this.button11.TabIndex = 10;
@@ -234,7 +235,7 @@ namespace Project
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(160, 421);
+            this.button12.Location = new System.Drawing.Point(163, 421);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(101, 117);
             this.button12.TabIndex = 11;
@@ -250,7 +251,7 @@ namespace Project
             this.button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
             this.button13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button13.Location = new System.Drawing.Point(160, 237);
+            this.button13.Location = new System.Drawing.Point(163, 237);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(101, 117);
             this.button13.TabIndex = 12;
@@ -265,7 +266,7 @@ namespace Project
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(447, 237);
+            this.button14.Location = new System.Drawing.Point(472, 237);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(101, 117);
             this.button14.TabIndex = 13;
@@ -280,7 +281,7 @@ namespace Project
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(583, 237);
+            this.button15.Location = new System.Drawing.Point(629, 237);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(101, 117);
             this.button15.TabIndex = 14;
@@ -295,7 +296,7 @@ namespace Project
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(724, 237);
+            this.button16.Location = new System.Drawing.Point(780, 237);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(101, 117);
             this.button16.TabIndex = 15;
@@ -311,7 +312,7 @@ namespace Project
             this.button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
             this.button17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button17.Location = new System.Drawing.Point(860, 237);
+            this.button17.Location = new System.Drawing.Point(927, 237);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(101, 117);
             this.button17.TabIndex = 16;
@@ -327,7 +328,7 @@ namespace Project
             this.button18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
             this.button18.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button18.Location = new System.Drawing.Point(447, 421);
+            this.button18.Location = new System.Drawing.Point(472, 421);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(101, 117);
             this.button18.TabIndex = 17;
@@ -343,7 +344,7 @@ namespace Project
             this.button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
             this.button19.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button19.Location = new System.Drawing.Point(583, 421);
+            this.button19.Location = new System.Drawing.Point(629, 421);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(101, 117);
             this.button19.TabIndex = 18;
@@ -358,7 +359,7 @@ namespace Project
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
-            this.button20.Location = new System.Drawing.Point(724, 421);
+            this.button20.Location = new System.Drawing.Point(780, 421);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(101, 117);
             this.button20.TabIndex = 19;
@@ -373,7 +374,7 @@ namespace Project
             this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
-            this.button21.Location = new System.Drawing.Point(860, 421);
+            this.button21.Location = new System.Drawing.Point(927, 421);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(101, 117);
             this.button21.TabIndex = 20;
@@ -381,7 +382,7 @@ namespace Project
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button21.UseVisualStyleBackColor = false;
             // 
-            // Form2
+            // F
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -408,7 +409,7 @@ namespace Project
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form2";
+            this.Name = "F";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Games";
             this.ResumeLayout(false);

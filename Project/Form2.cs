@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Form2 : Form
+    public partial class F : Form
     {
-        public Form2()
+        public F()
         {
             InitializeComponent();
         }
@@ -32,6 +32,11 @@ namespace Project
             Form3 F3 = new Form3();
             F3.Show();
             this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
    
