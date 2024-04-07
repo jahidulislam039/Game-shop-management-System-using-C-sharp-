@@ -39,6 +39,7 @@ namespace Project
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,6 +163,18 @@ namespace Project
             this.button2.Text = "Buy Now";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.MintCream;
+            this.button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button22.Location = new System.Drawing.Point(12, 12);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(45, 27);
+            this.button22.TabIndex = 22;
+            this.button22.Text = "Back";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -169,6 +182,7 @@ namespace Project
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1040, 623);
+            this.Controls.Add(this.button22);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton3);
@@ -179,6 +193,7 @@ namespace Project
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -197,5 +212,6 @@ namespace Project
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button22;
     }
 }

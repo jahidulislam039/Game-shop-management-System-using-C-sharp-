@@ -51,6 +51,7 @@ namespace Project
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -382,12 +383,25 @@ namespace Project
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button21.UseVisualStyleBackColor = false;
             // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button22.Location = new System.Drawing.Point(12, 12);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(45, 27);
+            this.button22.TabIndex = 21;
+            this.button22.Text = "Back";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
             // F
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1040, 623);
+            this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
@@ -439,5 +453,6 @@ namespace Project
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button22;
     }
 }
