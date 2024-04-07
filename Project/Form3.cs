@@ -36,5 +36,12 @@ namespace Project
         {
 
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            F F2 = new F();
+            F2.Show();
+            this.Hide();
+        }
     }
 }

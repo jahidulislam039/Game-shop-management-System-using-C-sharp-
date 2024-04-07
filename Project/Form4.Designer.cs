@@ -167,7 +167,7 @@ namespace Project
             // 
             this.button22.BackColor = System.Drawing.Color.MintCream;
             this.button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button22.Location = new System.Drawing.Point(12, 12);
+            this.button22.Location = new System.Drawing.Point(23, 12);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(45, 27);
             this.button22.TabIndex = 22;
