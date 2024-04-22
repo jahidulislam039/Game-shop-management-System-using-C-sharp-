@@ -10,36 +10,37 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class Form1 : Form
+    public partial class Form6 : Form
     {
-        public Form1()
+        public Form6()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form5 F5 = new Form5();
-            F5.Show();
-            this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
             F F2 = new F();
             F2.Show();
             this.Hide();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            Form7 F7 = new Form7();
+            F7.Show();
+            this.Hide();
+        }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 F1 = new Form1();
+            F1.Show();
+            this.Hide();
         }
     }
-   
 }

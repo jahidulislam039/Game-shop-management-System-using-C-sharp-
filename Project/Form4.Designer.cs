@@ -40,7 +40,7 @@ namespace Project
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,9 +92,10 @@ namespace Project
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox3.Enabled = false;
             this.textBox3.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(93, 790);
+            this.textBox3.Location = new System.Drawing.Point(219, 791);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(283, 39);
@@ -107,7 +108,7 @@ namespace Project
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.radioButton1.Location = new System.Drawing.Point(423, 768);
+            this.radioButton1.Location = new System.Drawing.Point(530, 760);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(96, 26);
             this.radioButton1.TabIndex = 4;
@@ -120,7 +121,7 @@ namespace Project
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.radioButton2.Location = new System.Drawing.Point(423, 826);
+            this.radioButton2.Location = new System.Drawing.Point(530, 824);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(44, 26);
             this.radioButton2.TabIndex = 5;
@@ -133,7 +134,7 @@ namespace Project
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.radioButton3.Location = new System.Drawing.Point(423, 799);
+            this.radioButton3.Location = new System.Drawing.Point(530, 792);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(57, 26);
             this.radioButton3.TabIndex = 6;
@@ -146,7 +147,7 @@ namespace Project
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(614, 790);
+            this.button1.Location = new System.Drawing.Point(670, 792);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 41);
             this.button1.TabIndex = 7;
@@ -159,7 +160,7 @@ namespace Project
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(795, 791);
+            this.button2.Location = new System.Drawing.Point(856, 792);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 39);
             this.button2.TabIndex = 8;
@@ -179,16 +180,16 @@ namespace Project
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(745, 757);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 29);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "$29.99";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(60, 782);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 56);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "$29.99";
             // 
             // Form4
             // 
@@ -197,7 +198,7 @@ namespace Project
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1040, 623);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -229,6 +230,6 @@ namespace Project
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
