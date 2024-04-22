@@ -38,13 +38,29 @@ namespace Project
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            Form9 F9 = new Form9();
+            F9.Show();
+            this.Hide();
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             Form1 F1 = new Form1();
             F1.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form8 F8 = new Form8();
+            F8.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form10 F10 = new Form10();
+            F10.Show();
             this.Hide();
         }
     }
