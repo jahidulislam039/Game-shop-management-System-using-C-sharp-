@@ -99,7 +99,7 @@ namespace Project
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Rockwell Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(306, 806);
+            this.radioButton3.Location = new System.Drawing.Point(306, 805);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(44, 26);
             this.radioButton3.TabIndex = 5;
@@ -183,6 +183,7 @@ namespace Project
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Red Dead Redemtion 2";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
