@@ -40,6 +40,7 @@ namespace Project
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +60,7 @@ namespace Project
             this.textBox1.BackColor = System.Drawing.SystemColors.MenuText;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Rockwell Condensed", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.textBox1.Location = new System.Drawing.Point(388, 590);
@@ -144,9 +146,9 @@ namespace Project
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(583, 788);
+            this.button1.Location = new System.Drawing.Point(614, 790);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 45);
+            this.button1.Size = new System.Drawing.Size(151, 41);
             this.button1.TabIndex = 7;
             this.button1.Text = "Add to Cart";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,12 +159,13 @@ namespace Project
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(719, 788);
+            this.button2.Location = new System.Drawing.Point(795, 791);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 45);
+            this.button2.Size = new System.Drawing.Size(132, 39);
             this.button2.TabIndex = 8;
             this.button2.Text = "Buy Now";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button22
             // 
@@ -176,6 +179,17 @@ namespace Project
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(745, 757);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 29);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "$29.99";
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,6 +197,7 @@ namespace Project
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1040, 623);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -214,5 +229,6 @@ namespace Project
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -39,6 +39,7 @@ namespace Project
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button22 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,12 +166,24 @@ namespace Project
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(572, 719);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 29);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "$59.99";
+            // 
             // Form3
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1040, 623);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -201,5 +214,6 @@ namespace Project
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Label label1;
     }
 }
