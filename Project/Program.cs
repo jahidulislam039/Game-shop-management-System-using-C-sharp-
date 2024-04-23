@@ -11,7 +11,7 @@ namespace Project
     {
         static void Main(string[] args)
         {
-           Application.Run (new Form6());
+           Application.Run (new Logiin());
         }
     }
 }

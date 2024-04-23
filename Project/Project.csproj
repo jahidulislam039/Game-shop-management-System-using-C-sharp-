@@ -63,184 +63,189 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CustomerInterface.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CustomerInterface.Designer.cs">
+      <DependentUpon>CustomerInterface.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form10.cs">
+    <Compile Include="MW3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form10.Designer.cs">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <Compile Include="MW3.Designer.cs">
+      <DependentUpon>MW3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form11.cs">
+    <Compile Include="Cyberpunk2077.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form11.Designer.cs">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <Compile Include="Cyberpunk2077.Designer.cs">
+      <DependentUpon>Cyberpunk2077.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form12.cs">
+    <Compile Include="GOW2018.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form12.Designer.cs">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <Compile Include="GOW2018.Designer.cs">
+      <DependentUpon>GOW2018.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form13.cs">
+    <Compile Include="lastOfUs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="lastOfUs.Designer.cs">
+      <DependentUpon>lastOfUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form14.cs">
+    <Compile Include="R6seige.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form14.Designer.cs">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <Compile Include="R6seige.Designer.cs">
+      <DependentUpon>R6seige.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form15.cs">
+    <Compile Include="SpiderMan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form15.Designer.cs">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <Compile Include="SpiderMan.Designer.cs">
+      <DependentUpon>SpiderMan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form16.cs">
+    <Compile Include="ResidentEvil4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form16.Designer.cs">
-      <DependentUpon>Form16.cs</DependentUpon>
+    <Compile Include="ResidentEvil4.Designer.cs">
+      <DependentUpon>ResidentEvil4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form17.cs">
+    <Compile Include="Starfield.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form17.Designer.cs">
-      <DependentUpon>Form17.cs</DependentUpon>
+    <Compile Include="Starfield.Designer.cs">
+      <DependentUpon>Starfield.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form18.cs">
+    <Compile Include="ACMirage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form18.Designer.cs">
-      <DependentUpon>Form18.cs</DependentUpon>
+    <Compile Include="ACMirage.Designer.cs">
+      <DependentUpon>ACMirage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form19.cs">
+    <Compile Include="HogwartsLegacy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form19.Designer.cs">
-      <DependentUpon>Form19.cs</DependentUpon>
+    <Compile Include="HogwartsLegacy.Designer.cs">
+      <DependentUpon>HogwartsLegacy.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Gamespage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Gamespage.Designer.cs">
+      <DependentUpon>Gamespage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form20.cs">
+    <Compile Include="BaldursGate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form20.Designer.cs">
-      <DependentUpon>Form20.cs</DependentUpon>
+    <Compile Include="BaldursGate.Designer.cs">
+      <DependentUpon>BaldursGate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form21.cs">
+    <Compile Include="Diablo4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form21.Designer.cs">
-      <DependentUpon>Form21.cs</DependentUpon>
+    <Compile Include="Diablo4.Designer.cs">
+      <DependentUpon>Diablo4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form22.cs">
+    <Compile Include="StarWars.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form22.Designer.cs">
-      <DependentUpon>Form22.cs</DependentUpon>
+    <Compile Include="StarWars.Designer.cs">
+      <DependentUpon>StarWars.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form23.cs">
+    <Compile Include="Horizon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form23.Designer.cs">
-      <DependentUpon>Form23.cs</DependentUpon>
+    <Compile Include="Horizon.Designer.cs">
+      <DependentUpon>Horizon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form24.cs">
+    <Compile Include="GOWRagnarok.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form24.Designer.cs">
-      <DependentUpon>Form24.cs</DependentUpon>
+    <Compile Include="GOWRagnarok.Designer.cs">
+      <DependentUpon>GOWRagnarok.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form25.cs">
+    <Compile Include="EldenRing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form25.Designer.cs">
-      <DependentUpon>Form25.cs</DependentUpon>
+    <Compile Include="EldenRing.Designer.cs">
+      <DependentUpon>EldenRing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form26.cs">
+    <Compile Include="PlagueTale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form26.Designer.cs">
-      <DependentUpon>Form26.cs</DependentUpon>
+    <Compile Include="PlagueTale.Designer.cs">
+      <DependentUpon>PlagueTale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form27.cs">
+    <Compile Include="Headphone.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form27.Designer.cs">
-      <DependentUpon>Form27.cs</DependentUpon>
+    <Compile Include="Headphone.Designer.cs">
+      <DependentUpon>Headphone.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form28.cs">
+    <Compile Include="Mouse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form28.Designer.cs">
-      <DependentUpon>Form28.cs</DependentUpon>
+    <Compile Include="Mouse.Designer.cs">
+      <DependentUpon>Mouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form29.cs">
+    <Compile Include="Keyboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form29.Designer.cs">
-      <DependentUpon>Form29.cs</DependentUpon>
+    <Compile Include="Keyboard.Designer.cs">
+      <DependentUpon>Keyboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="RDR2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="RDR2.Designer.cs">
+      <DependentUpon>RDR2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="GTAV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="GTAV.Designer.cs">
+      <DependentUpon>GTAV.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="Accessories.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Accessories.Designer.cs">
+      <DependentUpon>Accessories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="Logiin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Logiin.Designer.cs">
+      <DependentUpon>Logiin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="NewReg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="NewReg.Designer.cs">
+      <DependentUpon>NewReg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form8.cs">
+    <Compile Include="MW2019.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.cs">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <Compile Include="MW2019.Designer.cs">
+      <DependentUpon>MW2019.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="MW2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="MW2.Designer.cs">
+      <DependentUpon>MW2.cs</DependentUpon>
     </Compile>
     <Compile Include="GamesDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>GamesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GamesDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GamesDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -268,98 +273,109 @@
     <None Include="GamesDataSet.xss">
       <DependentUpon>GamesDataSet.xsd</DependentUpon>
     </None>
+    <None Include="GamesDataSet1.xsc">
+      <DependentUpon>GamesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GamesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GamesDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GamesDataSet1.xss">
+      <DependentUpon>GamesDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerInterface.resx">
+      <DependentUpon>CustomerInterface.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form10.resx">
-      <DependentUpon>Form10.cs</DependentUpon>
+    <EmbeddedResource Include="MW3.resx">
+      <DependentUpon>MW3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form11.resx">
-      <DependentUpon>Form11.cs</DependentUpon>
+    <EmbeddedResource Include="Cyberpunk2077.resx">
+      <DependentUpon>Cyberpunk2077.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form12.resx">
-      <DependentUpon>Form12.cs</DependentUpon>
+    <EmbeddedResource Include="GOW2018.resx">
+      <DependentUpon>GOW2018.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="lastOfUs.resx">
+      <DependentUpon>lastOfUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form14.resx">
-      <DependentUpon>Form14.cs</DependentUpon>
+    <EmbeddedResource Include="R6seige.resx">
+      <DependentUpon>R6seige.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form15.resx">
-      <DependentUpon>Form15.cs</DependentUpon>
+    <EmbeddedResource Include="SpiderMan.resx">
+      <DependentUpon>SpiderMan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form16.resx">
-      <DependentUpon>Form16.cs</DependentUpon>
+    <EmbeddedResource Include="ResidentEvil4.resx">
+      <DependentUpon>ResidentEvil4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form17.resx">
-      <DependentUpon>Form17.cs</DependentUpon>
+    <EmbeddedResource Include="Starfield.resx">
+      <DependentUpon>Starfield.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form18.resx">
-      <DependentUpon>Form18.cs</DependentUpon>
+    <EmbeddedResource Include="ACMirage.resx">
+      <DependentUpon>ACMirage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form19.resx">
-      <DependentUpon>Form19.cs</DependentUpon>
+    <EmbeddedResource Include="HogwartsLegacy.resx">
+      <DependentUpon>HogwartsLegacy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Gamespage.resx">
+      <DependentUpon>Gamespage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form20.resx">
-      <DependentUpon>Form20.cs</DependentUpon>
+    <EmbeddedResource Include="BaldursGate.resx">
+      <DependentUpon>BaldursGate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form21.resx">
-      <DependentUpon>Form21.cs</DependentUpon>
+    <EmbeddedResource Include="Diablo4.resx">
+      <DependentUpon>Diablo4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form22.resx">
-      <DependentUpon>Form22.cs</DependentUpon>
+    <EmbeddedResource Include="StarWars.resx">
+      <DependentUpon>StarWars.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form23.resx">
-      <DependentUpon>Form23.cs</DependentUpon>
+    <EmbeddedResource Include="Horizon.resx">
+      <DependentUpon>Horizon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form24.resx">
-      <DependentUpon>Form24.cs</DependentUpon>
+    <EmbeddedResource Include="GOWRagnarok.resx">
+      <DependentUpon>GOWRagnarok.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form25.resx">
-      <DependentUpon>Form25.cs</DependentUpon>
+    <EmbeddedResource Include="EldenRing.resx">
+      <DependentUpon>EldenRing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form26.resx">
-      <DependentUpon>Form26.cs</DependentUpon>
+    <EmbeddedResource Include="PlagueTale.resx">
+      <DependentUpon>PlagueTale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form27.resx">
-      <DependentUpon>Form27.cs</DependentUpon>
+    <EmbeddedResource Include="Headphone.resx">
+      <DependentUpon>Headphone.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form28.resx">
-      <DependentUpon>Form28.cs</DependentUpon>
+    <EmbeddedResource Include="Mouse.resx">
+      <DependentUpon>Mouse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form29.resx">
-      <DependentUpon>Form29.cs</DependentUpon>
+    <EmbeddedResource Include="Keyboard.resx">
+      <DependentUpon>Keyboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="RDR2.resx">
+      <DependentUpon>RDR2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="GTAV.resx">
+      <DependentUpon>GTAV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Accessories.resx">
+      <DependentUpon>Accessories.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="Logiin.resx">
+      <DependentUpon>Logiin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="NewReg.resx">
+      <DependentUpon>NewReg.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.cs</DependentUpon>
+    <EmbeddedResource Include="MW2019.resx">
+      <DependentUpon>MW2019.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="MW2.resx">
+      <DependentUpon>MW2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
