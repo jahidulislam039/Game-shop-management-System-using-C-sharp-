@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient
 
 namespace Project
 {
@@ -22,6 +23,13 @@ namespace Project
             Form6 F6 = new Form6();
             F6.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+            
+
         }
     }
 }

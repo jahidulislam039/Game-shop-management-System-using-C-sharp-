@@ -23,5 +23,10 @@ namespace Project
             F2.Show();
             this.Hide();
         }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

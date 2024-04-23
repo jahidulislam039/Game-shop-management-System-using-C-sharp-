@@ -46,10 +46,10 @@ namespace Project
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(-20, -3);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1016, 564);
+            this.pictureBox1.Size = new System.Drawing.Size(980, 500);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.WaitOnLoad = true;
@@ -59,7 +59,7 @@ namespace Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(23, 487);
+            this.label1.Location = new System.Drawing.Point(23, 515);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(940, 217);
             this.label1.TabIndex = 3;
@@ -183,7 +183,7 @@ namespace Project
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form9";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form9";
+            this.Text = "MW2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

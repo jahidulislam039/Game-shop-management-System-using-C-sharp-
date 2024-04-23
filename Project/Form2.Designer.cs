@@ -151,6 +151,7 @@ namespace Project
             this.button6.Text = "Cyberpunk 2077";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -166,6 +167,7 @@ namespace Project
             this.button7.Text = "God of War 2018";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -198,6 +200,7 @@ namespace Project
             this.button9.Text = "Baldur\'s Gate 3";
             this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -211,9 +214,10 @@ namespace Project
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(101, 117);
             this.button10.TabIndex = 9;
-            this.button10.Text = "Spider Man 2";
+            this.button10.Text = "Spider Man Remastered";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -230,6 +234,7 @@ namespace Project
             this.button11.Text = "Star Wars Jedi: Survivor ";
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -245,6 +250,7 @@ namespace Project
             this.button12.Text = "Diablo IV";
             this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button13
             // 
@@ -261,6 +267,7 @@ namespace Project
             this.button13.Text = "Rainbow Six Siege";
             this.button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button14
             // 
@@ -276,6 +283,7 @@ namespace Project
             this.button14.Text = "Resident Evil 4";
             this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -291,6 +299,7 @@ namespace Project
             this.button15.Text = "Starfield";
             this.button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button16
             // 
@@ -306,6 +315,7 @@ namespace Project
             this.button16.Text = "Assasins Creed Mirage";
             this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -322,6 +332,7 @@ namespace Project
             this.button17.Text = "Hogwarts Legacy";
             this.button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -338,6 +349,7 @@ namespace Project
             this.button18.Text = "Horizon Call of the Mountain";
             this.button18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -354,6 +366,7 @@ namespace Project
             this.button19.Text = "God of War Ragnarok";
             this.button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button20
             // 
@@ -369,6 +382,7 @@ namespace Project
             this.button20.Text = "Elden Ring";
             this.button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // button21
             // 
@@ -384,6 +398,7 @@ namespace Project
             this.button21.Text = "A Plague Tale: Requiem";
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 

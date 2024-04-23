@@ -183,7 +183,7 @@ namespace Project
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Red Dead Redemtion 2";
+            this.Text = "RDR 2";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
