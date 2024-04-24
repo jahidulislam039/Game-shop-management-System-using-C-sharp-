@@ -32,7 +32,6 @@ namespace Project
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.TextBox();
-            this.Deletebtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,20 +69,6 @@ namespace Project
             this.ID.TabIndex = 181;
             this.ID.TextChanged += new System.EventHandler(this.ID_TextChanged);
             // 
-            // Deletebtn
-            // 
-            this.Deletebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Deletebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Deletebtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Deletebtn.ForeColor = System.Drawing.Color.White;
-            this.Deletebtn.Location = new System.Drawing.Point(588, 501);
-            this.Deletebtn.Name = "Deletebtn";
-            this.Deletebtn.Size = new System.Drawing.Size(118, 41);
-            this.Deletebtn.TabIndex = 180;
-            this.Deletebtn.Text = "Delete";
-            this.Deletebtn.UseVisualStyleBackColor = false;
-            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -102,11 +87,11 @@ namespace Project
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ID);
-            this.Controls.Add(this.Deletebtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "SalesManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.SalesManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -118,7 +103,6 @@ namespace Project
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ID;
-        private System.Windows.Forms.Button Deletebtn;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

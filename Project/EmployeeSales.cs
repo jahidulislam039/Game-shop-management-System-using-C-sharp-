@@ -25,21 +25,20 @@ namespace Project
             try
             {
                 Con.Open();
-                string Query = "select * from Sales";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-                var ds = new DataSet();
-                sda.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0];
+                SqlCommand sq1 = new SqlCommand("select * from Sales", Con);
+                DataTable dt = new DataTable();
+
+                SqlDataReader sdr = sq1.ExecuteReader();
+                dt.Load(sdr);
+
+                dataGridView1.DataSource = dt;
+                Con.Close();
             }
             catch (Exception Ex)
             {
                 MessageBox.Show(Ex.Message);
             }
-            finally
-            {
-                Con.Close();
-            }
+            
         }
 
         private void Checkoutbtn_Click(object sender, EventArgs e)
@@ -65,7 +64,7 @@ namespace Project
                     Con.Close();
                     MessageBox.Show("Checkout Successfull");
                     DisplaySales();
-
+                    
 
                 }
             }
@@ -96,6 +95,23 @@ namespace Project
         private void name_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void EmployeeSales_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            EmployeeLogin EL1 = new EmployeeLogin();
+            EL1.Show();
+            this.Hide();
         }
     }
 }

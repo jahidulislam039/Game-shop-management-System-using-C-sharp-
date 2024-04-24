@@ -45,6 +45,7 @@ namespace Project
             this.label5 = new System.Windows.Forms.Label();
             this.Clearbtn = new System.Windows.Forms.Button();
             this.Checkoutbtn = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gamesDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gamesDataSet)).BeginInit();
@@ -59,6 +60,7 @@ namespace Project
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(541, 339);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // gamesDataSetBindingSource
             // 
@@ -187,12 +189,25 @@ namespace Project
             this.Checkoutbtn.UseVisualStyleBackColor = false;
             this.Checkoutbtn.Click += new System.EventHandler(this.Checkoutbtn_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(12, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(47, 32);
+            this.button4.TabIndex = 178;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // EmployeeSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1000, 623);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.Checkoutbtn);
             this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.label5);
@@ -208,6 +223,7 @@ namespace Project
             this.Name = "EmployeeSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.EmployeeSales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gamesDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gamesDataSet)).EndInit();
@@ -233,5 +249,6 @@ namespace Project
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Clearbtn;
         private System.Windows.Forms.Button Checkoutbtn;
+        private System.Windows.Forms.Button button4;
     }
 }
