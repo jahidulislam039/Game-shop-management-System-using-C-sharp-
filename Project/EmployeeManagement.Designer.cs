@@ -1,7 +1,7 @@
 ﻿
 namespace Project
 {
-    partial class EmplyeeManagement
+    partial class EmployeeManagement
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,7 @@ namespace Project
             this.Clearbtn = new System.Windows.Forms.Button();
             this.Addbtn = new System.Windows.Forms.Button();
             this.Deletebtn = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -191,12 +192,25 @@ namespace Project
             this.Deletebtn.UseVisualStyleBackColor = false;
             this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(12, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(47, 32);
+            this.button4.TabIndex = 176;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // EmplyeeManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1000, 623);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.Deletebtn);
             this.Controls.Add(this.Addbtn);
             this.Controls.Add(this.Clearbtn);
@@ -235,5 +249,6 @@ namespace Project
         private System.Windows.Forms.Button Clearbtn;
         private System.Windows.Forms.Button Addbtn;
         private System.Windows.Forms.Button Deletebtn;
+        private System.Windows.Forms.Button button4;
     }
 }

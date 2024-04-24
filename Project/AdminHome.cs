@@ -29,10 +29,32 @@ namespace Project
 
         private void button3_Click(object sender, EventArgs e)
         {
-            EmplyeeManagement EM1 = new EmplyeeManagement();
+            EmployeeManagement EM1 = new EmployeeManagement();
             EM1.Show();
             this.Hide();
 
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            GameManagement GM1 = new GameManagement();
+            GM1.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CustomerManagement CM1 = new CustomerManagement();
+            CM1.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SalesManagement SM1 = new SalesManagement();
+            SM1.Show();
+            this.Hide();
 
         }
     }

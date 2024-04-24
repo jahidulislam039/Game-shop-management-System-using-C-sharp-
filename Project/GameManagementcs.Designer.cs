@@ -38,8 +38,12 @@ namespace Project
             this.releaseYear = new System.Windows.Forms.TextBox();
             this.price = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.TextBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Deletebtn = new System.Windows.Forms.Button();
+            this.Addbtn = new System.Windows.Forms.Button();
+            this.Clearbtn = new System.Windows.Forms.Button();
+            this.platform = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,20 +134,6 @@ namespace Project
             this.ID.Size = new System.Drawing.Size(158, 28);
             this.ID.TabIndex = 32;
             // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Rockwell Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Playstation",
-            "Xbox",
-            "PC"});
-            this.checkedListBox1.Location = new System.Drawing.Point(138, 353);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(132, 58);
-            this.checkedListBox1.TabIndex = 42;
-            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -152,14 +142,80 @@ namespace Project
             this.dataGridView1.Size = new System.Drawing.Size(456, 327);
             this.dataGridView1.TabIndex = 43;
             // 
+            // Deletebtn
+            // 
+            this.Deletebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Deletebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Deletebtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Deletebtn.ForeColor = System.Drawing.Color.White;
+            this.Deletebtn.Location = new System.Drawing.Point(815, 491);
+            this.Deletebtn.Name = "Deletebtn";
+            this.Deletebtn.Size = new System.Drawing.Size(118, 41);
+            this.Deletebtn.TabIndex = 46;
+            this.Deletebtn.Text = "Delete";
+            this.Deletebtn.UseVisualStyleBackColor = false;
+            this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
+            // 
+            // Addbtn
+            // 
+            this.Addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Addbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Addbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Addbtn.ForeColor = System.Drawing.Color.White;
+            this.Addbtn.Location = new System.Drawing.Point(643, 491);
+            this.Addbtn.Name = "Addbtn";
+            this.Addbtn.Size = new System.Drawing.Size(118, 41);
+            this.Addbtn.TabIndex = 45;
+            this.Addbtn.Text = "ADD";
+            this.Addbtn.UseVisualStyleBackColor = false;
+            this.Addbtn.Click += new System.EventHandler(this.Addbtn_Click);
+            // 
+            // Clearbtn
+            // 
+            this.Clearbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Clearbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Clearbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clearbtn.ForeColor = System.Drawing.Color.White;
+            this.Clearbtn.Location = new System.Drawing.Point(475, 491);
+            this.Clearbtn.Name = "Clearbtn";
+            this.Clearbtn.Size = new System.Drawing.Size(118, 41);
+            this.Clearbtn.TabIndex = 44;
+            this.Clearbtn.Text = "Clear";
+            this.Clearbtn.UseVisualStyleBackColor = false;
+            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
+            // 
+            // platform
+            // 
+            this.platform.Location = new System.Drawing.Point(138, 357);
+            this.platform.Multiline = true;
+            this.platform.Name = "platform";
+            this.platform.Size = new System.Drawing.Size(158, 42);
+            this.platform.TabIndex = 47;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(12, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(47, 32);
+            this.button4.TabIndex = 177;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // GameManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1000, 623);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.platform);
+            this.Controls.Add(this.Deletebtn);
+            this.Controls.Add(this.Addbtn);
+            this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -170,6 +226,7 @@ namespace Project
             this.Controls.Add(this.price);
             this.Controls.Add(this.ID);
             this.Name = "GameManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameManagement";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -188,7 +245,11 @@ namespace Project
         private System.Windows.Forms.TextBox releaseYear;
         private System.Windows.Forms.TextBox price;
         private System.Windows.Forms.TextBox ID;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button Deletebtn;
+        private System.Windows.Forms.Button Addbtn;
+        private System.Windows.Forms.Button Clearbtn;
+        private System.Windows.Forms.TextBox platform;
+        private System.Windows.Forms.Button button4;
     }
 }

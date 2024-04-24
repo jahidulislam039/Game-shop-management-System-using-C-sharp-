@@ -11,16 +11,17 @@ using System.Windows.Forms;
 
 namespace Project
 {
-    public partial class EmplyeeManagement : Form
+    public partial class EmployeeManagement : Form
     {
-        public EmplyeeManagement()
+        public EmployeeManagement()
         {
             InitializeComponent();
             DisplayEMP();
         }
-        readonly SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
+      
         private void DisplayEMP()
         {
+            SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
             try
             {
                 Con.Open();
@@ -48,19 +49,25 @@ namespace Project
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
+            SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
+            Con.Open();
             try
             {
+                
                 if (ID.Text == "" || name.Text == "" || phone.Text == "" || username.Text == "" || password.Text == "")
                 {
                     MessageBox.Show("Missing Information");
                 }
                 else
-                {
-                    Con.Open();
-
-                    string Query = "insert into Emplyee values('" + ID.Text + "', '" + name.Text + "','" + phone.Text + "', '" + username.Text + "','" + password.Text + "')";
-                    SqlCommand cmd = new SqlCommand(Query, Con);
-                    cmd.ExecuteNonQuery();
+                {                
+                    SqlCommand sq2 = new SqlCommand("insert into Emplyee(ID,NAME,USERNAME,PHONE,PASSWORD) values(@ID,@NA,@UN,@PN,@PASS)", Con);
+                    sq2.Parameters.AddWithValue("@ID", ID.Text);
+                    sq2.Parameters.AddWithValue("@NA", name.Text);
+                    sq2.Parameters.AddWithValue("@UN", username.Text);
+                    sq2.Parameters.AddWithValue("@PASS", password.Text);
+                    sq2.Parameters.AddWithValue("@PN", phone.Text);
+                   
+                    sq2.ExecuteNonQuery();
                     Con.Close();
                     MessageBox.Show("Employee Added");
                     DisplayEMP();
@@ -82,6 +89,7 @@ namespace Project
 
         private void Deletebtn_Click(object sender, EventArgs e)
         {
+            SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
             try
             {
                 if (ID.Text == "")
@@ -136,7 +144,12 @@ namespace Project
             this.Hide();
         }
 
-        
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            AdminHome AH1 = new AdminHome();
+            AH1.Show();
+            this.Hide();
+        }
     }
 }
 

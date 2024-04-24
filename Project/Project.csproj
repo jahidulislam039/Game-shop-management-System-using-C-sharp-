@@ -81,17 +81,41 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmplyeeManagement.cs">
+    <Compile Include="CustomerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmplyeeManagement.Designer.cs">
-      <DependentUpon>EmplyeeManagement.cs</DependentUpon>
+    <Compile Include="CustomerManagement.Designer.cs">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLogin.Designer.cs">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement.Designer.cs">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeSales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EmployeeSales.Designer.cs">
       <DependentUpon>EmployeeSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesManagement.Designer.cs">
+      <DependentUpon>SalesManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="GameManagementcs.cs">
       <SubType>Form</SubType>
@@ -243,12 +267,6 @@
     <Compile Include="Accessories.Designer.cs">
       <DependentUpon>Accessories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logiin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Logiin.Designer.cs">
-      <DependentUpon>Logiin.cs</DependentUpon>
-    </Compile>
     <Compile Include="NewReg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -329,11 +347,20 @@
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmplyeeManagement.resx">
-      <DependentUpon>EmplyeeManagement.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerManagement.resx">
+      <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLogin.resx">
+      <DependentUpon>EmployeeLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeManagement.resx">
+      <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeSales.resx">
       <DependentUpon>EmployeeSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameManagementcs.resx">
       <DependentUpon>GameManagementcs.cs</DependentUpon>
@@ -352,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="R6seige.resx">
       <DependentUpon>R6seige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesManagement.resx">
+      <DependentUpon>SalesManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpiderMan.resx">
       <DependentUpon>SpiderMan.cs</DependentUpon>
@@ -409,9 +439,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Accessories.resx">
       <DependentUpon>Accessories.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Logiin.resx">
-      <DependentUpon>Logiin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewReg.resx">
       <DependentUpon>NewReg.cs</DependentUpon>

@@ -19,7 +19,7 @@ namespace Project
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Logiin L1 = new Logiin();
+            Login L1 = new Login();
             L1.Show();
             this.Hide();
         }
@@ -43,6 +43,11 @@ namespace Project
             
 
             
+
+        }
+
+        private void AdminLogin_Load(object sender, EventArgs e)
+        {
 
         }
     }

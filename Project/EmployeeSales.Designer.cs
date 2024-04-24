@@ -31,22 +31,23 @@ namespace Project
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gamesDataSet = new Project.GamesDataSet();
             this.gamesDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gamesDataSet = new Project.GamesDataSet();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.price = new System.Windows.Forms.TextBox();
+            this.accessories = new System.Windows.Forms.TextBox();
+            this.Games = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.Clearbtn = new System.Windows.Forms.Button();
+            this.Checkoutbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gamesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gamesDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gamesDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -54,20 +55,20 @@ namespace Project
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.DataSource = this.gamesDataSetBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(422, 48);
+            this.dataGridView1.Location = new System.Drawing.Point(399, 35);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(541, 339);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // gamesDataSet
-            // 
-            this.gamesDataSet.DataSetName = "GamesDataSet";
-            this.gamesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gamesDataSetBindingSource
             // 
             this.gamesDataSetBindingSource.DataSource = this.gamesDataSet;
             this.gamesDataSetBindingSource.Position = 0;
+            // 
+            // gamesDataSet
+            // 
+            this.gamesDataSet.DataSetName = "GamesDataSet";
+            this.gamesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // name
             // 
@@ -76,6 +77,7 @@ namespace Project
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(158, 28);
             this.name.TabIndex = 1;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // label1
             // 
@@ -88,48 +90,41 @@ namespace Project
             this.label1.TabIndex = 12;
             this.label1.Text = "Name";
             // 
-            // textBox1
+            // price
             // 
-            this.textBox1.Location = new System.Drawing.Point(107, 297);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 28);
-            this.textBox1.TabIndex = 13;
+            this.price.Location = new System.Drawing.Point(107, 248);
+            this.price.Multiline = true;
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(158, 28);
+            this.price.TabIndex = 14;
             // 
-            // textBox2
+            // accessories
             // 
-            this.textBox2.Location = new System.Drawing.Point(107, 239);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 28);
-            this.textBox2.TabIndex = 14;
+            this.accessories.Location = new System.Drawing.Point(107, 187);
+            this.accessories.Multiline = true;
+            this.accessories.Name = "accessories";
+            this.accessories.Size = new System.Drawing.Size(158, 28);
+            this.accessories.TabIndex = 15;
             // 
-            // textBox3
+            // Games
             // 
-            this.textBox3.Location = new System.Drawing.Point(107, 187);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(158, 28);
-            this.textBox3.TabIndex = 15;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(107, 131);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(158, 28);
-            this.textBox4.TabIndex = 16;
+            this.Games.Location = new System.Drawing.Point(107, 131);
+            this.Games.Multiline = true;
+            this.Games.Name = "Games";
+            this.Games.Size = new System.Drawing.Size(158, 28);
+            this.Games.TabIndex = 16;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(34, 239);
+            this.label2.Location = new System.Drawing.Point(44, 247);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 29);
             this.label2.TabIndex = 17;
             this.label2.Text = "Price";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -158,34 +153,64 @@ namespace Project
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(34, 297);
+            this.label5.Location = new System.Drawing.Point(1, 248);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 29);
             this.label5.TabIndex = 20;
             this.label5.Text = "Total";
             // 
-            // Employee
+            // Clearbtn
+            // 
+            this.Clearbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Clearbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Clearbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clearbtn.ForeColor = System.Drawing.Color.White;
+            this.Clearbtn.Location = new System.Drawing.Point(473, 409);
+            this.Clearbtn.Name = "Clearbtn";
+            this.Clearbtn.Size = new System.Drawing.Size(118, 41);
+            this.Clearbtn.TabIndex = 47;
+            this.Clearbtn.Text = "Clear";
+            this.Clearbtn.UseVisualStyleBackColor = false;
+            this.Clearbtn.Click += new System.EventHandler(this.Clearbtn_Click);
+            // 
+            // Checkoutbtn
+            // 
+            this.Checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Checkoutbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Checkoutbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Checkoutbtn.ForeColor = System.Drawing.Color.White;
+            this.Checkoutbtn.Location = new System.Drawing.Point(729, 409);
+            this.Checkoutbtn.Name = "Checkoutbtn";
+            this.Checkoutbtn.Size = new System.Drawing.Size(118, 41);
+            this.Checkoutbtn.TabIndex = 48;
+            this.Checkoutbtn.Text = "Checkout";
+            this.Checkoutbtn.UseVisualStyleBackColor = false;
+            this.Checkoutbtn.Click += new System.EventHandler(this.Checkoutbtn_Click);
+            // 
+            // EmployeeSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1000, 623);
+            this.Controls.Add(this.Checkoutbtn);
+            this.Controls.Add(this.Clearbtn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Games);
+            this.Controls.Add(this.accessories);
+            this.Controls.Add(this.price);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.name);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Employee";
+            this.Name = "EmployeeSales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gamesDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gamesDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gamesDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,13 +224,14 @@ namespace Project
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox price;
+        private System.Windows.Forms.TextBox accessories;
+        private System.Windows.Forms.TextBox Games;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Clearbtn;
+        private System.Windows.Forms.Button Checkoutbtn;
     }
 }
