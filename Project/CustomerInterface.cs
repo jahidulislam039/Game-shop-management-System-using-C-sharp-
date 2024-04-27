@@ -40,6 +40,13 @@ namespace Project
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CustomerProfile CP1 = new CustomerProfile();
+            CP1.Show();
+            this.Hide();
+        }
     }
    
 }

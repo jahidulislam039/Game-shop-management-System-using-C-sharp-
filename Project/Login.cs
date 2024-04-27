@@ -80,5 +80,10 @@ namespace Project
             AL1.Show();
             this.Hide();
         }
+
+        private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

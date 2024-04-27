@@ -103,6 +103,7 @@ namespace Project
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(275, 32);
             this.username.TabIndex = 14;
+            this.username.TextChanged += new System.EventHandler(this.username_TextChanged);
             // 
             // button2
             // 

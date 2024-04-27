@@ -59,15 +59,17 @@ namespace Project
                     sq2.Parameters.AddWithValue("@PN", phone.Text);
                     sq2.Parameters.AddWithValue("@EM", Email.Text);
                     sq2.ExecuteNonQuery();
-
+                   
                     con.Close();
+
+                    MessageBox.Show("New User Added");
                 }
                 catch(Exception Ex)
                 {
                     MessageBox.Show(Ex.Message);
                 }
 
-                MessageBox.Show("New User Added");
+               
             }
         }
     }

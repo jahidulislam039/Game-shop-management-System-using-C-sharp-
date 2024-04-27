@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerInterface.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="CustomerManagement.Designer.cs">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerProfile.Designer.cs">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="EmployeeLogin.cs">
       <SubType>Form</SubType>
@@ -338,6 +350,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerInterface.resx">
       <DependentUpon>CustomerInterface.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,6 +364,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement.resx">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerProfile.resx">
+      <DependentUpon>CustomerProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeLogin.resx">
       <DependentUpon>EmployeeLogin.cs</DependentUpon>
