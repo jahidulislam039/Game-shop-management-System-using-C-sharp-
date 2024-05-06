@@ -57,5 +57,12 @@ namespace Project
             this.Hide();
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AdminLogin AL1 = new AdminLogin();
+            AL1.Show();
+            this.Hide();
+        }
     }
 }

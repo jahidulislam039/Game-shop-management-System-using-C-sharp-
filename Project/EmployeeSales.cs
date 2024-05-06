@@ -25,12 +25,16 @@ namespace Project
             try
             {
                 Con.Open();
-                string Query = "select * from Gamess";
-                SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-                var ds = new DataSet();
-                sda.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0];
+
+                SqlCommand sq1 = new SqlCommand("select * from Sales", Con);
+                DataTable dt = new DataTable();
+
+                SqlDataReader sdr = sq1.ExecuteReader();
+                dt.Load(sdr);
+
+                dataGridView1.DataSource = dt;
+                Con.Close();
+
             }
             catch (Exception Ex)
             {
@@ -40,7 +44,6 @@ namespace Project
             {
                 Con.Close();
             }
-            
         }
 
         private void Checkoutbtn_Click(object sender, EventArgs e)
@@ -63,9 +66,10 @@ namespace Project
                     sq2.Parameters.AddWithValue("@PR", price.Text);
 
                     sq2.ExecuteNonQuery();
+                    DisplaySales();
                     Con.Close();
                     MessageBox.Show("Checkout Successfull");
-                    DisplaySales();
+                   
                     
 
                 }
@@ -115,5 +119,6 @@ namespace Project
             EL1.Show();
             this.Hide();
         }
+        
     }
 }

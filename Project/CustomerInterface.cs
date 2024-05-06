@@ -38,13 +38,22 @@ namespace Project
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            CustomerLibrary CL1 = new CustomerLibrary();
+            CL1.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             CustomerProfile CP1 = new CustomerProfile();
             CP1.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Cart C1 = new Cart();
+            C1.Show();
             this.Hide();
         }
     }

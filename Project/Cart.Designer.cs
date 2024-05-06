@@ -74,7 +74,7 @@ namespace Project
             this.Deletebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Deletebtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebtn.ForeColor = System.Drawing.Color.White;
-            this.Deletebtn.Location = new System.Drawing.Point(458, 519);
+            this.Deletebtn.Location = new System.Drawing.Point(512, 519);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(166, 41);
             this.Deletebtn.TabIndex = 181;
@@ -96,7 +96,7 @@ namespace Project
             this.Checkoutbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Checkoutbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Checkoutbtn.ForeColor = System.Drawing.Color.White;
-            this.Checkoutbtn.Location = new System.Drawing.Point(286, 519);
+            this.Checkoutbtn.Location = new System.Drawing.Point(324, 519);
             this.Checkoutbtn.Name = "Checkoutbtn";
             this.Checkoutbtn.Size = new System.Drawing.Size(118, 41);
             this.Checkoutbtn.TabIndex = 186;

@@ -38,8 +38,7 @@ namespace Project
                     da.Fill(dt);
                     
                     if(dt.Rows.Count>0)
-                    {
-                        MessageBox.Show("Login Successfull");
+                    {                        
                         EmployeeSales ES1 = new EmployeeSales();
                         ES1.Show();
                         this.Hide();

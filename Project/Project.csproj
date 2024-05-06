@@ -87,6 +87,12 @@
     <Compile Include="AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomerLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerLibrary.Designer.cs">
+      <DependentUpon>CustomerLibrary.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,7 @@
     <Compile Include="EmployeeSales.Designer.cs">
       <DependentUpon>EmployeeSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoggedinUser.cs" />
     <Compile Include="SalesManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerLibrary.resx">
+      <DependentUpon>CustomerLibrary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement.resx">
       <DependentUpon>CustomerManagement.cs</DependentUpon>

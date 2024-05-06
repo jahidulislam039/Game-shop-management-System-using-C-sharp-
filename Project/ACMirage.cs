@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,7 +42,28 @@ namespace Project
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
+            Con.Open();
+            try
+            {
+                SqlCommand sq2 = new SqlCommand("insert into Cart(Username,Pname,PRICE,Quantity,platform values(@UN,@PN,@PR,@QT,@PT)", Con);
+                sq2.Parameters.AddWithValue("@UN", LoggedinUser.username);
+                sq2.Parameters.AddWithValue("@PN", "AC Mirage");
+                sq2.Parameters.AddWithValue("@PR", 29.99);
+                sq2.Parameters.AddWithValue("@QT", 1);
+                sq2.Parameters.AddWithValue("@PT", comboBox1.SelectedItem.ToString());
 
+                sq2.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            { 
+                Con.Close();
+            }
+            MessageBox.Show("Product Added to cart");
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)

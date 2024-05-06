@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,9 @@ namespace Project
         {
             InitializeComponent();
         }
+        //private string uname;
+        //private string pass;
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,12 +38,18 @@ namespace Project
                     cmd.Parameters.AddWithValue("@username", username.Text);
                     cmd.Parameters.AddWithValue("@password", password.Text);
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
+
                     DataTable dt = new DataTable();
                     da.Fill(dt);
 
+                   
                     if (dt.Rows.Count > 0)
                     {
-                        MessageBox.Show("Login Successfull");
+                        DataRow userRow = dt.Rows[0];
+                        LoggedinUser.username = userRow["username"].ToString();
+                       
+
+
 
                         Form1 f1 = new Form1();
                         f1.Show();
@@ -82,6 +92,11 @@ namespace Project
         }
 
         private void username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
