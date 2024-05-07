@@ -47,6 +47,7 @@ namespace Project
                     {
                         DataRow userRow = dt.Rows[0];
                         LoggedinUser.username = userRow["username"].ToString();
+                        LoggedinUser.Id = Convert.ToInt32(userRow["Id"]);
                        
 
 

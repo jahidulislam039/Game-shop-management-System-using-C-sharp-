@@ -46,7 +46,7 @@ namespace Project
             Con.Open();
             try
             {
-                SqlCommand sq2 = new SqlCommand("insert into Cart(Username,Pname,PRICE,Quantity,platform values(@UN,@PN,@PR,@QT,@PT)", Con);
+                SqlCommand sq2 = new SqlCommand("insert into Cart(Username,PName,Quantity,Price,platform) values(@UN,@PN,@QT,@PR,@PT)", Con);
                 sq2.Parameters.AddWithValue("@UN", LoggedinUser.username);
                 sq2.Parameters.AddWithValue("@PN", "AC Mirage");
                 sq2.Parameters.AddWithValue("@PR", 29.99);
@@ -54,6 +54,7 @@ namespace Project
                 sq2.Parameters.AddWithValue("@PT", comboBox1.SelectedItem.ToString());
 
                 sq2.ExecuteNonQuery();
+                MessageBox.Show("Product Added to cart");
             }
             catch (Exception ex)
             {
@@ -63,7 +64,7 @@ namespace Project
             { 
                 Con.Close();
             }
-            MessageBox.Show("Product Added to cart");
+            
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)

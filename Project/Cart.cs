@@ -25,7 +25,7 @@ namespace Project
             try
             {
                 Con.Open();
-                string Query = "select * from Cart";
+                string Query = "select * from Cart where user";
                 SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
                 SqlCommandBuilder builder = new SqlCommandBuilder(sda);
                 var ds = new DataSet();
@@ -76,6 +76,18 @@ namespace Project
             {
                 Con.Close();
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Hide();
+        }
+
+        private void Cart_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

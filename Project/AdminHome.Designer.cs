@@ -30,6 +30,7 @@ namespace Project
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminHome));
             this.gamesDataSet = new Project.GamesDataSet();
             this.gamesDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button3 = new System.Windows.Forms.Button();
@@ -53,9 +54,9 @@ namespace Project
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.Font = new System.Drawing.Font("Rockwell Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(76, 69);
+            this.button3.Location = new System.Drawing.Point(223, 78);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(198, 89);
             this.button3.TabIndex = 2;
@@ -67,7 +68,7 @@ namespace Project
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Rockwell Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(581, 233);
+            this.button1.Location = new System.Drawing.Point(691, 233);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(198, 89);
             this.button1.TabIndex = 3;
@@ -79,7 +80,7 @@ namespace Project
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Font = new System.Drawing.Font("Rockwell Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(76, 233);
+            this.button2.Location = new System.Drawing.Point(223, 233);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(198, 89);
             this.button2.TabIndex = 4;
@@ -91,7 +92,7 @@ namespace Project
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Font = new System.Drawing.Font("Rockwell Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(581, 69);
+            this.button4.Location = new System.Drawing.Point(691, 78);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(198, 89);
             this.button4.TabIndex = 5;
@@ -116,6 +117,8 @@ namespace Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);

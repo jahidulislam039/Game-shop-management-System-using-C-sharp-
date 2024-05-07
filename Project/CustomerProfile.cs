@@ -15,6 +15,7 @@ namespace Project
     public partial class CustomerProfile : Form
     {
         private  string Uname = LoggedinUser.username;
+        private int _id = LoggedinUser.Id;
         
         public CustomerProfile()
         {
@@ -28,7 +29,8 @@ namespace Project
             Con.Open();
             try
             {
-                SqlCommand sq1 = new SqlCommand("select [name], phone, email, username from USSER where username = '"+Uname+"' ;", Con);
+                var sqlQuery = $@"select [name], phone, email, username from USSER where Id = {_id}";
+                var sq1 = new SqlCommand(sqlQuery, Con);
                 SqlDataReader sdr = sq1.ExecuteReader();
 
                 sdr.Read();

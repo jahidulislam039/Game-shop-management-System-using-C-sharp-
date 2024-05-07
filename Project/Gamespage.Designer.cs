@@ -402,8 +402,8 @@ namespace Project
             // 
             // button22
             // 
-            this.button22.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button22.BackColor = System.Drawing.Color.White;
+            this.button22.ForeColor = System.Drawing.Color.Black;
             this.button22.Location = new System.Drawing.Point(12, 12);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(45, 27);
@@ -418,6 +418,8 @@ namespace Project
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1040, 623);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
