@@ -61,8 +61,8 @@ namespace Project
             Con.Open();
             try
             {
-                SqlCommand sq2 = new SqlCommand("insert into Cart(Username,PName,Quantity,Price,platform) values(@UN,@PN,@QT,@PR,@PT)", Con);
-                sq2.Parameters.AddWithValue("@UN", LoggedinUser.username);
+                SqlCommand sq2 = new SqlCommand("insert into Cart(UID,PName,Quantity,Price,platform) values(@Uid,@PN,@QT,@PR,@PT)", Con);
+                sq2.Parameters.AddWithValue("@Uid", LoggedinUser.Id);
                 sq2.Parameters.AddWithValue("@PN", "Red Dead Redemption 2");
                 sq2.Parameters.AddWithValue("@PR", 49.99);
                 sq2.Parameters.AddWithValue("@QT", 1);

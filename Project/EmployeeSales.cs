@@ -26,14 +26,14 @@ namespace Project
             {
                 Con.Open();
 
-                SqlCommand sq1 = new SqlCommand("select * from Sales", Con);
-                DataTable dt = new DataTable();
+                var sqlQuery = $@"select * from Sales";
+                
+                SqlDataAdapter sda = new SqlDataAdapter(sqlQuery, Con);
+                SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+                var ds = new DataSet();
+                sda.Fill(ds);
+                dataGridView1.DataSource = ds.Tables[0];
 
-                SqlDataReader sdr = sq1.ExecuteReader();
-                dt.Load(sdr);
-
-                dataGridView1.DataSource = dt;
-                Con.Close();
 
             }
             catch (Exception Ex)
