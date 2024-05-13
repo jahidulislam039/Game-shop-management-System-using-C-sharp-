@@ -31,7 +31,6 @@ namespace Project
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpiderMan));
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,24 +53,12 @@ namespace Project
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(847, 709);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 39);
-            this.button2.TabIndex = 80;
-            this.button2.Text = "Buy Now";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(665, 709);
+            this.button1.Location = new System.Drawing.Point(782, 697);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 41);
             this.button1.TabIndex = 79;
@@ -84,7 +71,7 @@ namespace Project
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(211, 694);
+            this.label3.Location = new System.Drawing.Point(235, 685);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(259, 56);
             this.label3.TabIndex = 75;
@@ -95,7 +82,7 @@ namespace Project
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(57, 694);
+            this.label2.Location = new System.Drawing.Point(79, 685);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 56);
             this.label2.TabIndex = 74;
@@ -158,7 +145,7 @@ namespace Project
             "Playstation",
             "XBOX",
             "PC"});
-            this.comboBox1.Location = new System.Drawing.Point(497, 715);
+            this.comboBox1.Location = new System.Drawing.Point(560, 710);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(134, 23);
             this.comboBox1.TabIndex = 108;
@@ -173,7 +160,6 @@ namespace Project
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -192,7 +178,6 @@ namespace Project
         #endregion
 
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

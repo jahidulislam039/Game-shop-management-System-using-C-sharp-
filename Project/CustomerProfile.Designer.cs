@@ -29,6 +29,7 @@ namespace Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerProfile));
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,15 +41,16 @@ namespace Project
             this.label8 = new System.Windows.Forms.Label();
             this.usernamel = new System.Windows.Forms.Label();
             this.namel = new System.Windows.Forms.Label();
-            this.Refreshbtn = new System.Windows.Forms.Button();
+            this.DeleteAC = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(323, 62);
+            this.label1.Location = new System.Drawing.Point(319, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(376, 75);
             this.label1.TabIndex = 0;
@@ -69,9 +71,10 @@ namespace Project
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(390, 182);
+            this.label2.Location = new System.Drawing.Point(402, 208);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 29);
             this.label2.TabIndex = 180;
@@ -90,9 +93,10 @@ namespace Project
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(390, 231);
+            this.label4.Location = new System.Drawing.Point(399, 266);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 29);
             this.label4.TabIndex = 182;
@@ -101,9 +105,10 @@ namespace Project
             // phonel
             // 
             this.phonel.AutoSize = true;
+            this.phonel.BackColor = System.Drawing.Color.Black;
             this.phonel.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phonel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.phonel.Location = new System.Drawing.Point(527, 231);
+            this.phonel.Location = new System.Drawing.Point(527, 266);
             this.phonel.Name = "phonel";
             this.phonel.Size = new System.Drawing.Size(56, 29);
             this.phonel.TabIndex = 183;
@@ -112,9 +117,10 @@ namespace Project
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(390, 278);
+            this.label6.Location = new System.Drawing.Point(402, 315);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 29);
             this.label6.TabIndex = 184;
@@ -123,9 +129,10 @@ namespace Project
             // emaill
             // 
             this.emaill.AutoSize = true;
+            this.emaill.BackColor = System.Drawing.Color.Black;
             this.emaill.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emaill.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.emaill.Location = new System.Drawing.Point(527, 278);
+            this.emaill.Location = new System.Drawing.Point(526, 315);
             this.emaill.Name = "emaill";
             this.emaill.Size = new System.Drawing.Size(53, 29);
             this.emaill.TabIndex = 185;
@@ -134,9 +141,10 @@ namespace Project
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(390, 331);
+            this.label8.Location = new System.Drawing.Point(371, 375);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 29);
             this.label8.TabIndex = 186;
@@ -145,9 +153,10 @@ namespace Project
             // usernamel
             // 
             this.usernamel.AutoSize = true;
+            this.usernamel.BackColor = System.Drawing.Color.Black;
             this.usernamel.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernamel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.usernamel.Location = new System.Drawing.Point(527, 331);
+            this.usernamel.Location = new System.Drawing.Point(526, 375);
             this.usernamel.Name = "usernamel";
             this.usernamel.Size = new System.Drawing.Size(86, 29);
             this.usernamel.TabIndex = 187;
@@ -156,36 +165,39 @@ namespace Project
             // namel
             // 
             this.namel.AutoSize = true;
+            this.namel.BackColor = System.Drawing.Color.Black;
             this.namel.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.namel.Location = new System.Drawing.Point(527, 182);
+            this.namel.Location = new System.Drawing.Point(530, 208);
             this.namel.Name = "namel";
             this.namel.Size = new System.Drawing.Size(52, 29);
             this.namel.TabIndex = 188;
             this.namel.Text = "name";
             this.namel.Click += new System.EventHandler(this.label10_Click);
             // 
-            // Refreshbtn
+            // DeleteAC
             // 
-            this.Refreshbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Refreshbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Refreshbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Refreshbtn.ForeColor = System.Drawing.Color.White;
-            this.Refreshbtn.Location = new System.Drawing.Point(434, 410);
-            this.Refreshbtn.Name = "Refreshbtn";
-            this.Refreshbtn.Size = new System.Drawing.Size(118, 41);
-            this.Refreshbtn.TabIndex = 189;
-            this.Refreshbtn.Text = "Refresh";
-            this.Refreshbtn.UseVisualStyleBackColor = false;
-            this.Refreshbtn.Click += new System.EventHandler(this.Refreshbtn_Click);
+            this.DeleteAC.BackColor = System.Drawing.Color.Black;
+            this.DeleteAC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DeleteAC.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteAC.ForeColor = System.Drawing.Color.White;
+            this.DeleteAC.Location = new System.Drawing.Point(400, 436);
+            this.DeleteAC.Name = "DeleteAC";
+            this.DeleteAC.Size = new System.Drawing.Size(179, 40);
+            this.DeleteAC.TabIndex = 190;
+            this.DeleteAC.Text = "Delete Account";
+            this.DeleteAC.UseVisualStyleBackColor = false;
+            this.DeleteAC.Click += new System.EventHandler(this.button1_Click);
             // 
             // CustomerProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 623);
-            this.Controls.Add(this.Refreshbtn);
+            this.Controls.Add(this.DeleteAC);
             this.Controls.Add(this.namel);
             this.Controls.Add(this.usernamel);
             this.Controls.Add(this.label8);
@@ -219,6 +231,6 @@ namespace Project
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label usernamel;
         private System.Windows.Forms.Label namel;
-        private System.Windows.Forms.Button Refreshbtn;
+        private System.Windows.Forms.Button DeleteAC;
     }
 }

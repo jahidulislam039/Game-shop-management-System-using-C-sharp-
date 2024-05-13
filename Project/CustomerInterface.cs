@@ -56,6 +56,13 @@ namespace Project
             C1.Show();
             this.Hide();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Login l1 = new Login();
+            l1.Show();
+            this.Hide();
+        }
     }
    
 }

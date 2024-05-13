@@ -30,6 +30,7 @@ namespace Project
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeSales));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gamesDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gamesDataSet = new Project.GamesDataSet();
@@ -42,7 +43,6 @@ namespace Project
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.Clearbtn = new System.Windows.Forms.Button();
             this.Checkoutbtn = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -84,8 +84,9 @@ namespace Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(34, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 29);
@@ -119,6 +120,7 @@ namespace Project
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(44, 247);
@@ -131,6 +133,7 @@ namespace Project
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(1, 186);
@@ -142,6 +145,7 @@ namespace Project
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(34, 131);
@@ -150,20 +154,9 @@ namespace Project
             this.label4.TabIndex = 19;
             this.label4.Text = "Games";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1, 248);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 29);
-            this.label5.TabIndex = 20;
-            this.label5.Text = "Total";
-            // 
             // Clearbtn
             // 
-            this.Clearbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Clearbtn.BackColor = System.Drawing.Color.Black;
             this.Clearbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Clearbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clearbtn.ForeColor = System.Drawing.Color.White;
@@ -177,7 +170,7 @@ namespace Project
             // 
             // Checkoutbtn
             // 
-            this.Checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Checkoutbtn.BackColor = System.Drawing.Color.Black;
             this.Checkoutbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Checkoutbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Checkoutbtn.ForeColor = System.Drawing.Color.White;
@@ -206,11 +199,12 @@ namespace Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.Checkoutbtn);
             this.Controls.Add(this.Clearbtn);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -220,6 +214,7 @@ namespace Project
             this.Controls.Add(this.label1);
             this.Controls.Add(this.name);
             this.Controls.Add(this.dataGridView1);
+            this.DoubleBuffered = true;
             this.Name = "EmployeeSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee";
@@ -246,7 +241,6 @@ namespace Project
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Clearbtn;
         private System.Windows.Forms.Button Checkoutbtn;
         private System.Windows.Forms.Button button4;

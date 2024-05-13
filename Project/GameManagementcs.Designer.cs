@@ -29,6 +29,7 @@ namespace Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameManagement));
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@ namespace Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(80, 145);
@@ -61,6 +63,7 @@ namespace Project
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(33, 367);
@@ -72,6 +75,7 @@ namespace Project
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(65, 202);
@@ -83,6 +87,7 @@ namespace Project
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(19, 257);
@@ -94,6 +99,7 @@ namespace Project
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(33, 309);
@@ -137,18 +143,18 @@ namespace Project
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(475, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(532, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(456, 327);
             this.dataGridView1.TabIndex = 43;
             // 
             // Deletebtn
             // 
-            this.Deletebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Deletebtn.BackColor = System.Drawing.Color.Black;
             this.Deletebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Deletebtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebtn.ForeColor = System.Drawing.Color.White;
-            this.Deletebtn.Location = new System.Drawing.Point(815, 491);
+            this.Deletebtn.Location = new System.Drawing.Point(870, 491);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(118, 41);
             this.Deletebtn.TabIndex = 46;
@@ -158,11 +164,11 @@ namespace Project
             // 
             // Addbtn
             // 
-            this.Addbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Addbtn.BackColor = System.Drawing.Color.Black;
             this.Addbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Addbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbtn.ForeColor = System.Drawing.Color.White;
-            this.Addbtn.Location = new System.Drawing.Point(643, 491);
+            this.Addbtn.Location = new System.Drawing.Point(702, 491);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(118, 41);
             this.Addbtn.TabIndex = 45;
@@ -172,11 +178,11 @@ namespace Project
             // 
             // Clearbtn
             // 
-            this.Clearbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Clearbtn.BackColor = System.Drawing.Color.Black;
             this.Clearbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Clearbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Clearbtn.ForeColor = System.Drawing.Color.White;
-            this.Clearbtn.Location = new System.Drawing.Point(475, 491);
+            this.Clearbtn.Location = new System.Drawing.Point(532, 491);
             this.Clearbtn.Name = "Clearbtn";
             this.Clearbtn.Size = new System.Drawing.Size(118, 41);
             this.Clearbtn.TabIndex = 44;
@@ -209,6 +215,8 @@ namespace Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.platform);

@@ -29,6 +29,7 @@ namespace Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cart));
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.TextBox();
@@ -53,8 +54,9 @@ namespace Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(309, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 29);
@@ -71,7 +73,7 @@ namespace Project
             // 
             // Deletebtn
             // 
-            this.Deletebtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Deletebtn.BackColor = System.Drawing.Color.Black;
             this.Deletebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Deletebtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebtn.ForeColor = System.Drawing.Color.White;
@@ -93,7 +95,7 @@ namespace Project
             // 
             // Checkoutbtn
             // 
-            this.Checkoutbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Checkoutbtn.BackColor = System.Drawing.Color.Black;
             this.Checkoutbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.Checkoutbtn.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Checkoutbtn.ForeColor = System.Drawing.Color.White;
@@ -110,6 +112,8 @@ namespace Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.Checkoutbtn);
             this.Controls.Add(this.button4);

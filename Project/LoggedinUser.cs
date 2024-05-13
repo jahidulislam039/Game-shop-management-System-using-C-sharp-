@@ -9,6 +9,7 @@ namespace Project
     class LoggedinUser
     {
         public static string username { get; set; }
+        public static string password { get; set; }
         public static int Id { get; set; }
     }
 }

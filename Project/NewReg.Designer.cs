@@ -29,6 +29,7 @@ namespace Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewReg));
             this.label1 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
             this.username = new System.Windows.Forms.TextBox();
@@ -42,13 +43,17 @@ namespace Project
             this.label5 = new System.Windows.Forms.Label();
             this.Email = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.OTPsend = new System.Windows.Forms.Button();
+            this.enterOTP = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(393, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(279, 44);
@@ -57,6 +62,8 @@ namespace Project
             // 
             // name
             // 
+            this.name.BackColor = System.Drawing.Color.White;
+            this.name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.name.Location = new System.Drawing.Point(397, 126);
             this.name.Multiline = true;
             this.name.Name = "name";
@@ -66,6 +73,8 @@ namespace Project
             // 
             // username
             // 
+            this.username.BackColor = System.Drawing.Color.White;
+            this.username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.username.Location = new System.Drawing.Point(397, 195);
             this.username.Multiline = true;
             this.username.Name = "username";
@@ -74,6 +83,8 @@ namespace Project
             // 
             // password
             // 
+            this.password.BackColor = System.Drawing.Color.White;
+            this.password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.password.Location = new System.Drawing.Point(397, 264);
             this.password.Multiline = true;
             this.password.Name = "password";
@@ -82,6 +93,8 @@ namespace Project
             // 
             // phone
             // 
+            this.phone.BackColor = System.Drawing.Color.White;
+            this.phone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.phone.Location = new System.Drawing.Point(397, 330);
             this.phone.Multiline = true;
             this.phone.Name = "phone";
@@ -90,11 +103,11 @@ namespace Project
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.BackColor = System.Drawing.Color.White;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.button1.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(468, 465);
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(479, 527);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 41);
             this.button1.TabIndex = 12;
@@ -118,8 +131,9 @@ namespace Project
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(305, 195);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 29);
@@ -129,8 +143,9 @@ namespace Project
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label3.Location = new System.Drawing.Point(337, 126);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 29);
@@ -140,8 +155,9 @@ namespace Project
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.Location = new System.Drawing.Point(334, 333);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 29);
@@ -151,8 +167,9 @@ namespace Project
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.Location = new System.Drawing.Point(305, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 29);
@@ -161,6 +178,8 @@ namespace Project
             // 
             // Email
             // 
+            this.Email.BackColor = System.Drawing.Color.White;
+            this.Email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Email.Location = new System.Drawing.Point(397, 397);
             this.Email.Multiline = true;
             this.Email.Name = "Email";
@@ -170,13 +189,50 @@ namespace Project
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(334, 397);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 29);
             this.label6.TabIndex = 30;
             this.label6.Text = "Email";
+            // 
+            // OTPsend
+            // 
+            this.OTPsend.BackColor = System.Drawing.Color.White;
+            this.OTPsend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.OTPsend.Font = new System.Drawing.Font("Rockwell Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OTPsend.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.OTPsend.Location = new System.Drawing.Point(689, 390);
+            this.OTPsend.Name = "OTPsend";
+            this.OTPsend.Size = new System.Drawing.Size(118, 41);
+            this.OTPsend.TabIndex = 31;
+            this.OTPsend.Text = "Send OTP";
+            this.OTPsend.UseVisualStyleBackColor = false;
+            this.OTPsend.Click += new System.EventHandler(this.OTPsend_Click);
+            // 
+            // enterOTP
+            // 
+            this.enterOTP.BackColor = System.Drawing.Color.White;
+            this.enterOTP.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.enterOTP.Location = new System.Drawing.Point(397, 465);
+            this.enterOTP.Multiline = true;
+            this.enterOTP.Name = "enterOTP";
+            this.enterOTP.Size = new System.Drawing.Size(275, 32);
+            this.enterOTP.TabIndex = 32;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(298, 465);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 29);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Enter OTP";
             // 
             // NewReg
             // 
@@ -184,8 +240,12 @@ namespace Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CancelButton = this.button22;
             this.ClientSize = new System.Drawing.Size(1040, 623);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.enterOTP);
+            this.Controls.Add(this.OTPsend);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Email);
             this.Controls.Add(this.label5);
@@ -200,6 +260,7 @@ namespace Project
             this.Controls.Add(this.name);
             this.Controls.Add(this.label1);
             this.Name = "NewReg";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.NewReg_Load);
             this.ResumeLayout(false);
@@ -222,5 +283,8 @@ namespace Project
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Email;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button OTPsend;
+        private System.Windows.Forms.TextBox enterOTP;
+        private System.Windows.Forms.Label label7;
     }
 }

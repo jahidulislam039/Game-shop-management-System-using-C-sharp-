@@ -50,7 +50,7 @@ namespace Project
             SqlCommand cmd = new SqlCommand(Query, Con);
             cmd.ExecuteNonQuery();
             Con.Close();
-            MessageBox.Show("Product Removed Successfully");
+            MessageBox.Show("Products Checked out Successfully");
             DisplayCart();
             Con.Close();
 

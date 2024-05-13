@@ -15,6 +15,7 @@ namespace Project
     public partial class CustomerProfile : Form
     {
         private  string Uname = LoggedinUser.username;
+        private string pass = LoggedinUser.password;
         private int _id = LoggedinUser.Id;
         
         public CustomerProfile()
@@ -76,17 +77,28 @@ namespace Project
 
         }
 
-       
-       
 
-        private void Refreshbtn_Click(object sender, EventArgs e)
+
+
+        private void ChangePass_Click(object sender, EventArgs e)
         {
-            // SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
-
-            // Con.Open();
-            // Con.Close();
             
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+               SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
+                Con.Open();
+                string Query = $@"update USSER set isVisible  = 0 where Id = {_id}";
+                SqlCommand cmd = new SqlCommand(Query, Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Account Deleted Successfully");
+                Con.Close();
+                Login l1 = new Login();
+                l1.Show();
+                this.Hide();
+            
         }
     }
 }

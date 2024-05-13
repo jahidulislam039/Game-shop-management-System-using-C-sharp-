@@ -34,7 +34,8 @@ namespace Project
                 try
                 {
                     SqlConnection Con = new SqlConnection(connectionString: @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\mystr\source\repos\Project\Project\Games.mdf;Integrated Security=True;Connect Timeout=30");
-                    SqlCommand cmd = new SqlCommand("select * from USSER WHERE username = @username and password =@password", Con);
+                    var query = $@"select * from USSER WHERE username = @username and password =@password and isVisible = 1";
+                    SqlCommand cmd = new SqlCommand(query, Con);
                     cmd.Parameters.AddWithValue("@username", username.Text);
                     cmd.Parameters.AddWithValue("@password", password.Text);
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -47,6 +48,7 @@ namespace Project
                     {
                         DataRow userRow = dt.Rows[0];
                         LoggedinUser.username = userRow["username"].ToString();
+                        LoggedinUser.password = userRow["PASSWORD"].ToString();
                         LoggedinUser.Id = Convert.ToInt32(userRow["Id"]);
                        
 

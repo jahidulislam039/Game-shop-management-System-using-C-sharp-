@@ -30,7 +30,6 @@ namespace Project
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lastOfUs));
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,24 +40,12 @@ namespace Project
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button2.Location = new System.Drawing.Point(843, 690);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 39);
-            this.button2.TabIndex = 59;
-            this.button2.Text = "Buy Now";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Font = new System.Drawing.Font("Rockwell Condensed", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(661, 690);
+            this.button1.Location = new System.Drawing.Point(725, 690);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 41);
             this.button1.TabIndex = 58;
@@ -71,7 +58,7 @@ namespace Project
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(207, 675);
+            this.label3.Location = new System.Drawing.Point(245, 675);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(259, 56);
             this.label3.TabIndex = 54;
@@ -82,7 +69,7 @@ namespace Project
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(53, 675);
+            this.label2.Location = new System.Drawing.Point(75, 675);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 56);
             this.label2.TabIndex = 53;
@@ -133,7 +120,7 @@ namespace Project
             "Playstation",
             "XBOX",
             "PC"});
-            this.comboBox1.Location = new System.Drawing.Point(493, 696);
+            this.comboBox1.Location = new System.Drawing.Point(540, 696);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(134, 23);
             this.comboBox1.TabIndex = 107;
@@ -147,7 +134,6 @@ namespace Project
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button22);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -163,7 +149,6 @@ namespace Project
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

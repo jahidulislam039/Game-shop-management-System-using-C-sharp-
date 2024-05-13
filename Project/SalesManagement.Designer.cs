@@ -29,6 +29,7 @@ namespace Project
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesManagement));
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.TextBox();
@@ -51,9 +52,10 @@ namespace Project
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(331, 42);
+            this.label1.Location = new System.Drawing.Point(378, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 29);
             this.label1.TabIndex = 182;
@@ -62,7 +64,7 @@ namespace Project
             // 
             // ID
             // 
-            this.ID.Location = new System.Drawing.Point(377, 39);
+            this.ID.Location = new System.Drawing.Point(434, 38);
             this.ID.Multiline = true;
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(166, 33);
@@ -72,7 +74,7 @@ namespace Project
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(116, 103);
+            this.dataGridView1.Location = new System.Drawing.Point(136, 102);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(722, 373);
             this.dataGridView1.TabIndex = 179;
@@ -83,6 +85,7 @@ namespace Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
